@@ -24,6 +24,57 @@
         font-family: 'Quicksand', sans-serif;
         background-color: rgba(221, 160, 221, 0.1);
       }
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 26px;
+        place-content: center;
+      }
+      .product-card {
+        width: 240px;
+      }
+      .product-img {
+        width: 240px;
+        height: 240px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+      }
+      .product-info figure {
+        margin: 0;
+      }
+      .product-info figure img {
+        width: 35px;
+        height: 35px;
+      }
+      .product-info div p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+        margin: 0 0 4px 0;
+      }
+      .product-info div p:nth-child(2) {
+        font-size: var(--sm);
+        margin: 0;
+        color: var(--very-light-pink)
+      }
+      @media (max-width:640px) {
+        .card-container {
+         grid-template-columns: repeat(auto-fill, 140px);
+        }
+        .product-card {
+        width: 140px;
+      }
+      .product-img {
+        width: 140px;
+        height: 140px;
+      }
+      }
+
     </style>
     <body>
       <section class="main-container">
@@ -31,167 +82,198 @@
 
           <div class="product-card">
             <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/pdp-gallery-mini-lip-cheek-essentials-1440x1952.png?v=1650415791" alt="labial">
-            <div>
+            <div class="product-info">
+              <div>
               <p>$18,00</p>
               <p>Mini Lip & Cheek Essentials</p>
-            </div>
+              </div>
             <figure>
-              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
             </figure>
+            </div>
           </div>
 
           <div class="product-card">
           <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/4-IN-1-MIST-SKU-1_c9988cd0-b4d3-4fb7-b9e2-5e3a36bf5d05.jpg?v=1598637698" alt="4-en-1">
-          <div>
+          <div class="product-info">
+            <div>
             <p>$24,00</p>
             <p>Always An Optimist 4-In-1 Mist</p>
           </div>
           <figure>
-            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
           </figure>
+          </div>
         </div>
 
         <div class="product-card">
         <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Full-Size-Mascara-Open-SKU.jpg?v=1629247163" alt="mascara-de-pestañas">
+        <div class="product-info">
         <div>
           <p>$20,00</p>
           <p>Perfect Strokes Universal Volumizing Mascara</p>
         </div>
         <figure>
-          <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+          <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
         </figure>
+        </div>
       </div>
 
       <div class="product-card">
       <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/FOUNDATION-BRUSH-SKU-1_b4e67510-3fda-4ca6-a72a-e7b955d788a8.jpg?v=1598638646" alt="brocha-liquida">
-      <div>
+      <div class="product-info">
+        <div>
         <p>$28,00</p>
         <p>Liquid Touch Foundation Brush</p>
       </div>
       <figure>
-        <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+        <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
       </figure>
+      </div>
       </div>
 
          <div class="product-card">
             <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Compact-Mirror-Open-SKU.jpg?v=1608351844" alt="espejo-compacto">
-            <div>
+            <div class="product-info">
+              <div>
               <p>$8,00</p>
               <p>Compact Mirror</p>
             </div>
             <figure>
-              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
             </figure>
+            </div>
           </div>
 
           <div class="product-card">
           <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/LIQUID_LINER-SKU-1.jpg?v=1630031335" alt="delineador-liquido">
-          <div>
+          <div class="product-info">
+            <div>
             <p>$19,00</p>
             <p>Perfect Strokes Matte Liquid Liner</p>
           </div>
           <figure>
-            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
           </figure>
+          </div>
         </div>
 
          <div class="product-card">
         <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Foundation-130N-SKU.jpg?v=1610501757" alt="base">
-        <div>
+        <div class="product-info">
+          <div>
           <p>$29,00</p>
           <p>Liquid Touch Weightless Foundation</p>
          </div>
          <figure>
-          <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+          <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
           </figure>
+        </div>
         </div>
 
          <div class="product-card">
             <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Pore-Primer-SKU.jpg?v=1617149124" alt="primer">
-            <div>
+            <div class="product-info">
+              <div>
               <p>$26,00</p>
               <p>Always an Optimist Pore Diffusing Primer</p>
             </div>
             <figure>
-              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
             </figure>
+            </div>
           </div>
 
           <div class="product-card">
           <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Eyeshadow-Primer-SKU.jpg?v=1617149462" alt="primer-de-ojos">
-          <div>
+          <div class="product-info">
+            <div>
             <p>$18,00</p>
             <p>Always an Optimist Weightless Eye Primer</p>
           </div>
           <figure>
-            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
-          </figure>
+            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
+          </div>
         </div>
 
         <div class="product-card">
             <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Luminizer-ENCHANT-SKU.jpg?v=1598652680" alt="iluminador-rosa">
-            <div>
+            <div class="product-info">
+              <div>
               <p>$22,00</p>
               <p>Positive Light Liquid Luminizer</p>
             </div>
             <figure>
-              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
             </figure>
+            </div>
           </div>
 
           <div class="product-card">
           <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Liquid-Blush-Matte-BLISS-SKU.jpg?v=1639020840" alt="blush">
-          <div>
+          <div class="product-info">
+            <div>
             <p>$20,00</p>
             <p>Soft Pinch Liquid Blush</p>
           </div>
           <figure>
-            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
           </figure>
+          </div>
         </div>
 
         <div class="product-card">
             <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Setting-Powder-Light-Medium-SKU.jpg?v=1639181034" alt="polvo-compacto">
-            <div>
+            <div class="product-info">
+              <div>
               <p>$22,00</p>
               <p>Always an Optimist Soft Radiance Setting Powder</p>
             </div>
             <figure>
-              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
             </figure>
+            </div>
           </div>
 
           <div class="product-card">
           <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Brow-Harmony-Palette-Soft-Blonde-SKU.jpg?v=1630021431" alt="duo-cejas">
-          <div>
+          <div class="product-info">
+            <div>
             <p>$24,00</p>
             <p>Brow Harmony Shape & Fill Duo</p>
           </div>
           <figure>
-            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+            <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
           </figure>
+          </div>
         </div>
+
         <div class="product-card">
         <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Came-to-Play-SKU.jpg?v=1634319954" alt="paleta-sombras-1">
-        <div>
+        <div class="product-info">
+          <div>
           <p>$29,00</p>
           <p>Rare Beauty Discovery Eyeshadow Palette – Came To Play</p>
         </div>
         <figure>
-          <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+          <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
         </figure>
-      </div>
+        </div>
+        </div>
 
-      <div class="product-card">
+         <div class="product-card">
             <img class="product-img" src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/True-to-Myself-SKU.jpg?v=1617143677" alt="paleta-sombras-2">
-            <div>
+            <div class="product-info">
+              <div>
               <p>$29,00</p>
               <p>Rare Beauty Discovery Eyeshadow Palette</p>
             </div>
             <figure>
-              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654811705891.svg?token=exp=1654812622~hmac=fe59157d1ed5fb2111074d8778d3d76c" alt="carrito">
+              <img src="https://cdn-user-icons.flaticon.com/73009/73009087/1654890090372.svg?token=exp=1654890991~hmac=695a0a4d6084cd60bdb7c3de311a965c" alt="carrito">
             </figure>
+            </div>
           </div>
+
         </div>
       </section>
     </body>
