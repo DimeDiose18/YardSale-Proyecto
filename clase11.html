@@ -28,16 +28,83 @@
         font-family: 'Quicksand', sans-serif;
         background-color: rgba(221, 160, 221, 0.1);
       }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 28px;
+        border-bottom: 1px solid var(--very-light-pink);
+      }
       .menu {
         display: none;
+        width: 20px;
+        height: 20px;
       }
-      .logo {
+      .nav-logo {
         width: 100px;
       }
-      .navbar-left ul, .navbar-right ul {
+      .navbar-left ul,
+      .navbar-right ul {
         list-style: none;
         padding: 0;
-        margin-top: 24px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        height: 50px;
+      }
+      .navbar-left {
+        display: flex;
+      }
+      .navbar-left ul {
+        margin-left: 18px;
+      }
+      .navbar-left ul li a,
+      .navbar-right ul li a {
+        text-decoration: none;
+        color: var(--very-light-pink);
+        margin: 0 6px;
+        padding: 8px;
+      }
+      .navbar-left ul li a:hover,
+      .navbar-right ul li a:hover {
+        color: var(--turqueise);
+      }
+      .navbar-email {
+        color: var(--very-light-pink);
+        font-size: var(--sm);
+        margin-right: 12px;
+      }
+      .navbar-shopping-card {
+        position: relative;
+      }
+      .shopping-card {
+        width: 20px;
+      }
+      .navbar-shopping-card div {
+        width: 12px;
+        height: 12px;
+        background-color: var(--plum);
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: var(--sm);
+        position: absolute;
+        top: -7px;
+        right: -2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 640px) {
+        .menu {
+          display: block;
+          margin-top: 16px;
+        }
+        .navbar-left ul {
+          display: none;
+        }
+        .navbar-email {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -51,9 +118,9 @@
 
       <div class="navbar-left">
         <img
-          src="https://cdn-icons-png.flaticon.com/800/7405/7405974.png"
+          src="https://lh3.googleusercontent.com/2uLSaY9I3_SdIToMuWy9GppCh7qAiKp0ab_qdDgIktBgr8ofcqu_JBeDXcn7tYihCSM"
           alt="logo"
-          class="logo"
+          class="nav-logo"
         />
 
         <ul>
@@ -77,14 +144,17 @@
 
       <div class="navbar-right">
         <ul>
-          <li>camilayokou@example.com</li>
+          <li class="navbar-email">camilayokou@example.com</li>
           <li class="navbar-shopping-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="shopping-card">
-          <div>2</div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png"
+              alt="shopping-card"
+              class="shopping-card"
+            />
+            <div>2</div>
           </li>
         </ul>
       </div>
-     
     </nav>
   </body>
 </html>
