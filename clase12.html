@@ -27,6 +27,30 @@
         font-family: 'Quicksand', sans-serif;
         background-color: rgba(221, 160, 221, 0.1);
       }
+      .product-detail {
+        width: 360px;
+        padding-bottom: 24px;
+      }
+      .product-detail-close {
+        background: var(--white);
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        z-index: 2;
+        padding: 10px;
+        border-radius: 50%;
+        align-items: center;
+      }
+      .product-detail-close:hover {
+        cursor: pointer;
+      }
+      .product-detail-close img {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+      }
       .primary-button {
         background-color: var(--plum);
         border-radius: 8px;
@@ -40,6 +64,7 @@
       }
       .primary-button img {
         width: 25px;
+        margin: 5px;
       }
       .add-to-cart-button {
         display:flex;
@@ -50,10 +75,12 @@
   </head>
   <body>
     <aside class="product-detail">
+      <div class="product-detail-close">
       <img
         src="https://icones.pro/wp-content/uploads/2021/08/icone-x-grise.png"
         alt="icon-close"
       />
+      </div>
       <img
         src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Full-Size-Mascara-Open-SKU.jpg?v=1629247163"
         alt="mascara-de-pestañas"
