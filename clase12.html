@@ -30,6 +30,8 @@
       .product-detail {
         width: 360px;
         padding-bottom: 24px;
+        position: absolute;
+        right: 0;
       }
       .product-detail-close {
         background: var(--white);
@@ -51,6 +53,52 @@
         width: 14px;
         height: 14px;
       }
+      .product-detail > img:nth-child(2) {
+        width: 360px;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 0 0 20px 20px;
+      }
+      .points {
+        display: flex;
+        justify-content: center;
+      }
+      .points > li {
+        background: var(--very-light-pink);
+        width: 8px;
+        height: 8px;
+        margin: 8px 6px;
+        border-radius: 50%;
+        list-style-type: none;
+        cursor: pointer;
+      }
+      .points > .active {
+        background: var(--very-light-pink);
+      }
+      .points > li:hover {
+        background: var(--white);
+      }
+      .product-info {
+        margin: 24px 24px 0 24px;
+      }
+      .product-info p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+      .product-info p:nth-child(2) {
+        color: var(--very-light-pink);
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+      .product-info p:nth-child(3) {
+        color: var(--very-light-pink);
+        font-size: var(--sm);
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
       .primary-button {
         background-color: var(--plum);
         border-radius: 8px;
@@ -67,24 +115,34 @@
         margin: 5px;
       }
       .add-to-cart-button {
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: center;
+      }
+      @media (max-width: 640px) {
+        .product-detail {
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
     <aside class="product-detail">
       <div class="product-detail-close">
-      <img
-        src="https://icones.pro/wp-content/uploads/2021/08/icone-x-grise.png"
-        alt="icon-close"
-      />
+        <img
+          src="https://icones.pro/wp-content/uploads/2021/08/icone-x-grise.png"
+          alt="icon-close"
+        />
       </div>
       <img
         src="https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Full-Size-Mascara-Open-SKU.jpg?v=1629247163"
         alt="mascara-de-pestañas"
       />
+      <div class="points">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </div>
       <div class="product-info">
         <p>$20.000</p>
         <p>Perfect Strokes Universal Volumizing Mascara</p>
