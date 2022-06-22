@@ -33,6 +33,19 @@
         position: absolute;
         right: 0;
       }
+      .title-container {
+        display: flex;
+        align-items: center;
+      }
+      .title-container img {
+        transform: rotate(180deg);
+        width: 20px;
+        height: 15px;
+      }
+      .title {
+        font-size: var(--lg);
+        font-weight: bold;
+      }
       .order {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -108,6 +121,10 @@
   </head>
   <body>
     <aside class="product-detail">
+      <div class="title-container">
+        <img src="https://flyclipart.com/thumb2/icono-de-desplazamiento-flecha-a-la-derecha-gratis-de-entypo-icons-768097.png" alt="arrow">
+        <p class="title">Shopping cart</p>
+      </div>
       <div class="my-order-content>">
         <div class="shopping-cart">
           <figure>
